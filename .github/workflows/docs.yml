@@ -2,7 +2,7 @@
 name: Docs Publish
 on:
   push:
-    branches: [ 'retrigger-docs-build' ]
+    branches: [ 'fix-deploy' ]
 
 jobs:
   deploy:
