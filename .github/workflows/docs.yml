@@ -1,9 +1,10 @@
 ---
 name: Docs Publish
 on:
+  workflow_dispatch
   push:
     tags:
-      - "deploy-v2.5.1"
+      - "*"
 
 jobs:
   deploy:
