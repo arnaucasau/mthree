@@ -1,0 +1,618 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Advanced usage &mdash; Mthree 2.5.1 2.5.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/jupyter-sphinx.css" type="text/css" />
+  <link rel="stylesheet" href="_static/thebelab.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="M3 paper example" href="tutorials/01_M3_ex1.html" />
+    <link rel="prev" title="Balanced calibrations" href="balanced.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<div class="container-fluid header-holder tutorials-header" id="header-holder">
+  <div class="container">
+    <div class="header-container">
+      <a class="header-logo" href="https://qiskit.org/" aria-label="PyTorch"></a>
+
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="https://qiskit.org/documentation/" target="_blank">Qiskit documentation</a>
+          </li>
+          <li>
+            <a href="https://qiskit.org/documentation/partners/">Partners documentation</a>
+          </li>
+          <li>
+            <a href="https://github.com/Qiskit-Partners/mthree" target="_blank">Github</a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="main-menu-open-button" href="#" data-behavior="open-mobile-menu"></a>
+    </div>
+
+  </div>
+</div>
+
+
+<body class="pytorch-body">
+
+   
+
+    
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="rst-current-version-label"></span>
+    <span class="rst-versions-dropdown-icon"></span>
+  </span>
+  <div class="rst-other-versions">
+    
+  </div>
+  <script>
+    jQuery('.version').click((evt) => {
+      const hash = window.location.hash
+      const complete_url = evt.target.href + hash
+      window.location = complete_url
+      evt.preventDefault()
+    })
+  </script>
+</div>
+
+    <div class="table-of-contents-link-wrapper">
+      <span>Table of Contents</span>
+      <a href="#" class="toggle-table-of-contents" data-behavior="toggle-table-of-contents"></a>
+    </div>
+
+    <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
+      <div class="pytorch-side-scroll">
+        <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <div class="pytorch-left-menu-search">
+            
+
+            
+              
+              
+                <div class="version">
+                  2.5.1
+                </div>
+              
+            
+
+            <div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search Mthree 2.5.1 Docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+            
+          </div>
+
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">mthree (2.5.1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="basic.html">Basic usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transpiled.html">Transpiled circuits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="expvals.html">Expectation values</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sampling.html">Sampling problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collections.html">Using collections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouped.html">Grouped operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="error.html">Error analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="marginals.html">Low-weight operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="probs.html">Obtaining probabilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cal_io.html">Saving and loading calibrations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">Utility functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="balanced.html">Balanced calibration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Advanced usage</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/01_M3_ex1.html">M3 paper example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/02_correcting_probs.html">Correcting probabilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/03_qv_example.html">Quantum Volume</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/04_dynamic_bv.html">Dynamic Bernstein–Vazirani</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/10_basic_vqe.html">Basic mitigated VQE</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="apidocs/main.html">Mitigation class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidocs/classes.html">Distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidocs/classes.html#distribution-collections">Distribution collections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidocs/utils.html">Utility functions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="pytorch-container">
+      <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
+        <div class="pytorch-breadcrumbs-wrapper">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="pytorch-breadcrumbs">
+    
+      <li>
+        <a href="index.html">
+            Mthree 2.5.1 2.5.1 documentation
+        </a> &gt;
+      </li>
+
+        
+      <li>Advanced usage</li>
+    
+  </ul>
+</div>
+        </div>
+
+        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
+          Shortcuts
+        </div>
+      </div>
+
+      <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
+        <div class="pytorch-content-left">
+          
+          <div class="rst-content">
+          
+            <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
+             <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
+              
+  <section id="advanced-usage">
+<span id="advanced"></span><h1>Advanced usage<a class="headerlink" href="#advanced-usage" title="Permalink to this heading">¶</a></h1>
+<section id="options-for-m3mitigation-class">
+<h2>Options for M3Mitigation class<a class="headerlink" href="#options-for-m3mitigation-class" title="Permalink to this heading">¶</a></h2>
+<section id="iter-threshold">
+<h3><code class="docutils literal notranslate"><span class="pre">iter_threshold</span></code><a class="headerlink" href="#iter-threshold" title="Permalink to this heading">¶</a></h3>
+<p>The main <a class="reference internal" href="stubs/mthree.M3Mitigation.html#mthree.M3Mitigation" title="mthree.M3Mitigation"><code class="xref py py-class docutils literal notranslate"><span class="pre">mthree.M3Mitigation</span></code></a> class accepts the <cite>iter_threshold</cite> keyword argument
+that determines when the automated method selector pickes the iterative method
+over direct LU factorization (selection also depends on free memory).</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">qiskit.providers.fake_provider</span> <span class="kn">import</span> <span class="n">FakeCasablanca</span>
+<span class="kn">import</span> <span class="nn">mthree</span>
+
+<span class="n">backend</span> <span class="o">=</span> <span class="n">FakeCasablanca</span><span class="p">()</span>
+<span class="n">mit</span> <span class="o">=</span> <span class="n">mthree</span><span class="o">.</span><span class="n">M3Mitigation</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">iter_threshold</span><span class="o">=</span><span class="mi">4321</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+</section>
+<section id="options-for-calibration">
+<h2>Options for calibration<a class="headerlink" href="#options-for-calibration" title="Permalink to this heading">¶</a></h2>
+<section id="shots">
+<h3><code class="docutils literal notranslate"><span class="pre">shots</span></code><a class="headerlink" href="#shots" title="Permalink to this heading">¶</a></h3>
+<p>When calibrating the mitigator, it is possible to vary the number of shots per calibration circuit:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mit</span> <span class="o">=</span> <span class="n">mthree</span><span class="o">.</span><span class="n">M3Mitigation</span><span class="p">(</span><span class="n">backend</span><span class="p">)</span>
+<span class="n">mit</span><span class="o">.</span><span class="n">cals_from_system</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="n">shots</span><span class="o">=</span><span class="mi">4321</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="method">
+<h3><code class="docutils literal notranslate"><span class="pre">method</span></code><a class="headerlink" href="#method" title="Permalink to this heading">¶</a></h3>
+<p>There are three ways to do the calibration.  The default <code class="docutils literal notranslate"><span class="pre">balanced</span></code> method executes <span class="math notranslate nohighlight">\(2N\)</span> circuits
+with varying bitstring patterns such that the <span class="math notranslate nohighlight">\(|0\rangle\)</span> and <span class="math notranslate nohighlight">\(|1\rangle\)</span> states are each
+prepared <span class="math notranslate nohighlight">\(N\)</span> times and averaged over.  For example, the balanced bit-strings over four qubits are</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mthree</span><span class="o">.</span><span class="n">circuits</span><span class="o">.</span><span class="n">balanced_cal_strings</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;0101&#39;, &#39;1010&#39;, &#39;0011&#39;, &#39;1100&#39;, &#39;0001&#39;, &#39;1110&#39;, &#39;0000&#39;, &#39;1111&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">independent</span></code> method also sends <span class="math notranslate nohighlight">\(2N\)</span> circuits but measures only a single qubit at a time.
+As such, this is a truely uncorrelated calibration process.</p>
+<p>Finally, a <code class="docutils literal notranslate"><span class="pre">marginal</span></code> calibration can also be done that sends only two circuits,
+<span class="math notranslate nohighlight">\(|0\rangle^{\otimes N}\)</span> and <span class="math notranslate nohighlight">\(|1\rangle^{\otimes N}\)</span>, and marginalizes over the
+results to get the needed <span class="math notranslate nohighlight">\(2N\)</span> error rates.  These two states are a sub-set of the <code class="docutils literal notranslate"><span class="pre">balanced</span></code>
+calibrations, and are what Qiskit uses in its readout mitigation.  This method is very sensitive to
+state preparation errors, and should not be used in practice.</p>
+<p>An example setting the method is</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mit</span> <span class="o">=</span> <span class="n">mthree</span><span class="o">.</span><span class="n">M3Mitigation</span><span class="p">(</span><span class="n">backend</span><span class="p">)</span>
+<span class="n">mit</span><span class="o">.</span><span class="n">cals_from_system</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;independent&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="rep-delay">
+<h3><code class="docutils literal notranslate"><span class="pre">rep_delay</span></code><a class="headerlink" href="#rep-delay" title="Permalink to this heading">¶</a></h3>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Do not set this unless you know what you are doing.</p>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">rep_delay</span></code> keyword argument sets the time between calibration circuits on IBM Quantum systems.
+This option exists to test and reduce the presence of state prep errors.  The calibration circuits
+in M3 all contain conditional resets at the beginning so as to minimize the need for setting this
+option.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mit</span> <span class="o">=</span> <span class="n">mthree</span><span class="o">.</span><span class="n">M3Mitigation</span><span class="p">(</span><span class="n">backend</span><span class="p">)</span>
+<span class="n">mit</span><span class="o">.</span><span class="n">cals_from_system</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="n">rep_delay</span><span class="o">=</span><span class="mf">400e-6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+</section>
+<section id="initial-reset">
+<h2><code class="docutils literal notranslate"><span class="pre">initial_reset</span></code><a class="headerlink" href="#initial-reset" title="Permalink to this heading">¶</a></h2>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Do not set this unless you know what you are doing.</p>
+</div>
+<p>A boolean value that specifies whether reset instructions should be used at the beginning of the
+calibration circuits.  Ideally this helps to supress any residual state prep errors that occur from
+imperfect reset of the qubits.  Can be used in concert with, or as an alternative to <code class="docutils literal notranslate"><span class="pre">rep_delay</span></code>.
+Note that, in order for this to work, the circuits that need to be mitigated must also have reset
+instructions at the beginning.  Otherwise you are calibrating for no state-prep errors, but the
+actual circuits may still suffer from these errors.</p>
+</section>
+<section id="options-when-applying-corrections">
+<h2>Options when applying corrections<a class="headerlink" href="#options-when-applying-corrections" title="Permalink to this heading">¶</a></h2>
+<p>Here we first calibrate a mitigator and generate raw counts:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">qiskit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">qc</span> <span class="o">=</span> <span class="n">QuantumCircuit</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">qc</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">qc</span><span class="o">.</span><span class="n">h</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">qc</span><span class="o">.</span><span class="n">cx</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">qc</span><span class="o">.</span><span class="n">cx</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">qc</span><span class="o">.</span><span class="n">cx</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">qc</span><span class="o">.</span><span class="n">cx</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">qc</span><span class="o">.</span><span class="n">cx</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">qc</span><span class="o">.</span><span class="n">measure_all</span><span class="p">()</span>
+
+<span class="n">mit</span> <span class="o">=</span> <span class="n">mthree</span><span class="o">.</span><span class="n">M3Mitigation</span><span class="p">(</span><span class="n">backend</span><span class="p">)</span>
+<span class="n">mit</span><span class="o">.</span><span class="n">cals_from_system</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+
+<span class="n">trans_qc</span> <span class="o">=</span> <span class="n">transpile</span><span class="p">(</span><span class="n">qc</span><span class="p">,</span> <span class="n">backend</span><span class="p">)</span>
+<span class="n">raw_counts</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">trans_qc</span><span class="p">,</span> <span class="n">shots</span><span class="o">=</span><span class="mi">8192</span><span class="p">)</span><span class="o">.</span><span class="n">result</span><span class="p">()</span><span class="o">.</span><span class="n">get_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<section id="id1">
+<h3><code class="docutils literal notranslate"><span class="pre">method</span></code><a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
+<p>There are two ways to solve the linear system of equations generated by M3.  First, the
+<code class="docutils literal notranslate"><span class="pre">direct</span></code> method uses LU-factorization by constructing the reduced assignment matrix.
+Second the <code class="docutils literal notranslate"><span class="pre">iterative</span></code> method uses preconditioned iterative solvers to find the
+solution vector without explicit matrix construction.  By default M3 uses an <code class="docutils literal notranslate"><span class="pre">auto</span></code>
+method that selects the appropriate solution method based on the number of unique
+bit-strings and the available free memory on the computer.  To override this, one
+can simply set the option:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">quasis</span> <span class="o">=</span> <span class="n">mit</span><span class="o">.</span><span class="n">apply_correction</span><span class="p">(</span><span class="n">raw_counts</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;iterative&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="distance">
+<h3><code class="docutils literal notranslate"><span class="pre">distance</span></code><a class="headerlink" href="#distance" title="Permalink to this heading">¶</a></h3>
+<p>Optionally one may trucate the M3 assignment matrix to only those elements of the matrix that
+are transistions between elements less than or equal to a given Hamming distance away from
+each other.  This does not change the dimensionality of the underlying matrix, but rather
+changes the sparsity pattern of the elements.  This is done using the <code class="docutils literal notranslate"><span class="pre">distance</span></code> keyword argument.
+By default, M3 computes the corrections out to the full distance.  In practice, including only
+up to <code class="docutils literal notranslate"><span class="pre">distance=3</span></code> elements yields accurate answers in most cases.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">quasis</span> <span class="o">=</span> <span class="n">mit</span><span class="o">.</span><span class="n">apply_correction</span><span class="p">(</span><span class="n">raw_counts</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span> <span class="n">distance</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="details">
+<h3><code class="docutils literal notranslate"><span class="pre">details</span></code><a class="headerlink" href="#details" title="Permalink to this heading">¶</a></h3>
+<p>Allows one to see additional information about the solution.  This changes the return of the
+:method:<code class="docutils literal notranslate"><span class="pre">mthree.M3Mitigation.apply_correction</span></code> method to a tuple of two values:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">quasis</span><span class="p">,</span> <span class="n">details</span> <span class="o">=</span> <span class="n">mit</span><span class="o">.</span><span class="n">apply_correction</span><span class="p">(</span><span class="n">raw_counts</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span> <span class="n">details</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">details</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;method&#39;: &#39;direct&#39;, &#39;time&#39;: 0.00024534499999617765, &#39;dimension&#39;: 46, &#39;col_norms&#39;: array([0.99949824, 0.98004379, 0.96645397, 0.98630101, 0.98609164,
+       0.99891419, 0.97852536, 0.99312076, 0.99310274, 0.95274218,
+       0.98628819, 0.99916473, 0.97817532, 0.99889806, 0.97529363,
+       0.95692901, 0.95651957, 0.98782879, 0.98343618, 0.9598323 ,
+       0.98245521, 0.9530161 , 0.97761991, 0.9985254 , 0.97520656,
+       0.95678708, 0.956611  , 0.97526749, 0.93146109, 0.93257272,
+       0.95675577, 0.99735789, 0.98094409, 0.94856924, 0.91799838,
+       0.91822735, 0.95643632, 0.99626237, 0.99871106, 0.97622038,
+       0.95978554, 0.99725902, 0.93332528, 0.996385  , 0.99754355,
+       0.99986646])}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="max-iter">
+<h3><code class="docutils literal notranslate"><span class="pre">max_iter</span></code><a class="headerlink" href="#max-iter" title="Permalink to this heading">¶</a></h3>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Do not set this unless you know what you are doing.</p>
+</div>
+<p>Sets the maximum number of iterations performed by the iterative solver.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">quasis</span> <span class="o">=</span> <span class="n">mit</span><span class="o">.</span><span class="n">apply_correction</span><span class="p">(</span><span class="n">raw_counts</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;iterative&#39;</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="tol">
+<h3><code class="docutils literal notranslate"><span class="pre">tol</span></code><a class="headerlink" href="#tol" title="Permalink to this heading">¶</a></h3>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Do not set this unless you know what you are doing.</p>
+</div>
+<p>Sets the tolerance of the iterative solver.  Might need adjustments to <code class="docutils literal notranslate"><span class="pre">max_iter</span></code> if value
+is set too low.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">quasis</span> <span class="o">=</span> <span class="n">mit</span><span class="o">.</span><span class="n">apply_correction</span><span class="p">(</span><span class="n">raw_counts</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;iterative&#39;</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+</section>
+</section>
+
+
+             </article>
+             
+            </div>
+            <footer>
+<!-- USER FEEDBACK -->
+  
+
+  <!-- NEXT/PREVIOUS BUTTONS -->
+  <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    
+      <a href="tutorials/01_M3_ex1.html" class="btn btn-neutral float-right" title="M3 paper example" accesskey="n" rel="next">Next <img src="_static/images/chevron-right-purple.svg" class="next-page"></a>
+    
+    
+      <a href="balanced.html" class="btn btn-neutral" title="Balanced calibrations" accesskey="p" rel="prev"><img src="_static/images/chevron-right-purple.svg" class="previous-page"> Previous</a>
+    
+  </div>
+
+  <div role="contentinfo">
+    <p>
+    <!-- SHOW QISKIT COPYRIGHT TEXT -->
+        &copy; Copyright 2021, Mthree Team.
+
+    <!-- SHOW DATE PAGE LAST UPDATED -->
+      Last updated on 2023/12/26.
+
+    </p>
+  </div>
+
+<!-- SHOW 'MADE WITH SPHINX' TEXT -->
+    
+      <div>
+        Built with <a href="http://sphinx-doc.org/">Sphinx</a> using <a href="https://github.com/Qiskit/qiskit_sphinx_theme">Qiskit Sphinx Theme </a> (based on <a href="https://github.com/pytorch/pytorch_sphinx_theme"> PyTorch Sphinx Theme</a>).
+      </div>
+     
+<br>
+</footer>
+
+<script>
+  function clicked(ctaType) {
+    document.getElementById('was-helpful-thank-you').style.visibility = 'visible';
+    window.trackCta(`Helpful - ${ctaType}`);
+  }
+</script>
+
+          </div>
+        </div>
+
+        <div class="pytorch-content-right" id="pytorch-content-right">
+          <div class="pytorch-right-menu" id="pytorch-right-menu">
+            <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
+              <ul>
+<li><a class="reference internal" href="#">Advanced usage</a><ul>
+<li><a class="reference internal" href="#options-for-m3mitigation-class">Options for M3Mitigation class</a><ul>
+<li><a class="reference internal" href="#iter-threshold"><code class="docutils literal notranslate"><span class="pre">iter_threshold</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#options-for-calibration">Options for calibration</a><ul>
+<li><a class="reference internal" href="#shots"><code class="docutils literal notranslate"><span class="pre">shots</span></code></a></li>
+<li><a class="reference internal" href="#method"><code class="docutils literal notranslate"><span class="pre">method</span></code></a></li>
+<li><a class="reference internal" href="#rep-delay"><code class="docutils literal notranslate"><span class="pre">rep_delay</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#initial-reset"><code class="docutils literal notranslate"><span class="pre">initial_reset</span></code></a></li>
+<li><a class="reference internal" href="#options-when-applying-corrections">Options when applying corrections</a><ul>
+<li><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">method</span></code></a></li>
+<li><a class="reference internal" href="#distance"><code class="docutils literal notranslate"><span class="pre">distance</span></code></a></li>
+<li><a class="reference internal" href="#details"><code class="docutils literal notranslate"><span class="pre">details</span></code></a></li>
+<li><a class="reference internal" href="#max-iter"><code class="docutils literal notranslate"><span class="pre">max_iter</span></code></a></li>
+<li><a class="reference internal" href="#tol"><code class="docutils literal notranslate"><span class="pre">tol</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  
+
+     
+       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+         <script src="_static/jquery.js"></script>
+         <script src="_static/underscore.js"></script>
+         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+         <script src="_static/doctools.js"></script>
+         <script src="_static/sphinx_highlight.js"></script>
+         <script src="_static/thebelab-helper.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+         <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+     
+
+  
+
+  <script type="text/javascript" src="_static/js/vendor/popper.min.js"></script>
+  <script type="text/javascript" src="_static/js/vendor/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+  <div>
+    <br>
+  </div>
+
+  <!-- Begin Mobile Menu -->
+
+  <div class="mobile-main-menu">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="mobile-main-menu-header-container">
+          <a class="header-logo" href="https://qiskit.org/" aria-label="PyTorch"></a>
+          <a class="main-menu-close-button" href="#" data-behavior="close-mobile-menu"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-main-menu-links-container">
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="https://qiskit.org/documentation/">Qiskit documentation</a>
+          </li>
+          <li>
+            <a href="https://qiskit.org/documentation/partners/">Partners documentation</a>
+          </li>
+          <li>
+            <a href="https://github.com/Qiskit-Partners/mthree">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Mobile Menu -->
+
+  <script type="text/javascript" src="_static/js/vendor/anchor.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      mobileMenu.bind();
+      mobileTOC.bind();
+      pytorchAnchors.bind();
+      sideMenus.bind();
+      scrollToAnchor.bind();
+      highlightNavigation.bind();
+      mainMenuDropdown.bind();
+      filterTags.bind();
+
+      // Add class to links that have code blocks, since we cannot create links in code blocks
+      $("article.pytorch-article a span.pre").each(function(e) {
+        $(this).closest("a").addClass("has-code");
+      });
+    })
+  </script>
+</body>
+</html>
