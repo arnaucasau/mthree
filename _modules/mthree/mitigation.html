@@ -1,134 +1,52 @@
-
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+  <html class="no-js" lang="en" >
 <head>
   <meta charset="utf-8">
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>mthree.mitigation &mdash; Mthree 2.5.1 2.5.1 documentation</title>
-  
-
-  
-  
-  
-  
-
-  
-
-  
-  
-    
-
-  
-
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <!-- <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" /> -->
+  <title>mthree.mitigation &mdash; Mthree 2.6.3 2.6.3 documentation</title>
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/jupyter-sphinx.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/thebelab.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+  <link rel="stylesheet" href="../../_static/thebelab.css" type="text/css" /><script src="../../_static/js/web-components/top-nav-bar.js"></script>
 
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
-</head>
-
-<div class="container-fluid header-holder tutorials-header" id="header-holder">
-  <div class="container">
-    <div class="header-container">
-      <a class="header-logo" href="https://qiskit.org/" aria-label="PyTorch"></a>
-
-      <div class="main-menu">
-        <ul>
-          <li>
-            <a href="https://qiskit.org/documentation/" target="_blank">Qiskit documentation</a>
-          </li>
-          <li>
-            <a href="https://qiskit.org/documentation/partners/">Partners documentation</a>
-          </li>
-          <li>
-            <a href="https://github.com/Qiskit-Partners/mthree" target="_blank">Github</a>
-          </li>
-        </ul>
-      </div>
-
-      <a class="main-menu-open-button" href="#" data-behavior="open-mobile-menu"></a>
-    </div>
-
-  </div>
-</div>
-
-
+  <!-- SEGMENT ANALYTICS --></head>
 <body class="pytorch-body">
+  <!-- UNIFIED TOP MENU -->
+  <qiskit-ui-shell variant="hide-account"></qiskit-ui-shell>
 
    
 
+    <!-- LEFT SIDE BAR -->
+
+    <!-- if translations available, display language dropdown menu -->
     
 
-    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    <span class="rst-current-version-label"></span>
-    <span class="rst-versions-dropdown-icon"></span>
-  </span>
-  <div class="rst-other-versions">
-    
-  </div>
-  <script>
-    jQuery('.version').click((evt) => {
-      const hash = window.location.hash
-      const complete_url = evt.target.href + hash
-      window.location = complete_url
-      evt.preventDefault()
-    })
-  </script>
-</div>
-
+    <!-- Menu becomes dropdown in mobile view -->
     <div class="table-of-contents-link-wrapper">
       <span>Table of Contents</span>
       <a href="#" class="toggle-table-of-contents" data-behavior="toggle-table-of-contents"></a>
     </div>
 
+    <!-- left side bar main content -->
     <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
-      <div class="pytorch-side-scroll">
-        <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          <div class="pytorch-left-menu-search">
-            
-
-            
-              
-              
-                <div class="version">
-                  2.5.1
-                </div>
-              
-            
-
-            <div role="search">
+    <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <div class="sidebar">
+    <div class="pytorch-left-menu-search">
+        <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search Mthree 2.5.1 Docs" />
+    <input type="text" name="q" placeholder="Search Mthree 2.6.3 Docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
+    </div>
 
-            
-          </div>
-
-          
-            
-            
-              
-            
-            
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">mthree (2.5.1)</a></li>
+    <!-- render sidebar from the toctree -->
+    
+    
+        <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">mthree (2.6.3)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../citing.html">Citing</a></li>
 </ul>
@@ -164,13 +82,60 @@
 <li class="toctree-l1"><a class="reference internal" href="../../apidocs/utils.html">Utility functions</a></li>
 </ul>
 
-            
-          
-        </div>
-      </div>
-    </nav>
+    
+
+    <!-- PREVIOUS RELEASES -->
+        
+
+    </div>
+  </div>
+</nav>
+
+<!-- OPTIONAL EXPANDABLE FUNCTIONALITY -->
+
+
+<!-- STYLING -->
+<script>
+    // indent subheadings under captions
+    expandable_rows = document.getElementsByClassName("caption");
+    var i;
+    for (i = 0; i < expandable_rows.length; i++) {
+        expandable_rows[i].nextElementSibling.style.marginLeft = "1rem"
+
+        // un-bold subheadings in dropdown
+        var subheadings = expandable_rows[i].nextElementSibling
+        for (j = 0; j < subheadings.children.length; j++) {
+            subheadings.children[j].style.fontWeight = "unset"
+        }
+    }
+
+    // adjust toctree class name to style external links
+    var toc_rows = document.getElementsByClassName("toctree-l1");
+    var i;
+    for (i = 0; i < toc_rows.length; i++) {
+        if (toc_rows[i].children[0].className === "reference external") {
+            toc_rows[i].className = "toctree-l1-external"
+            }
+    }
+
+    // expand and unexpand previous releases dropdown when clicked
+    var release_rows = document.getElementsByClassName("sidebar-l1-expandable");
+    for (i = 0; i < release_rows.length; i++) {
+        release_rows[i].addEventListener("click", function() {
+            this.classList.toggle("open");
+            var clicked_subheadings = this.nextElementSibling;
+            if (clicked_subheadings.style.display === "block") {
+            clicked_subheadings.style.display = "none";
+            } else {
+            clicked_subheadings.style.display = "block";
+            }
+        });
+    }
+</script>
 
     <div class="pytorch-container">
+
+      <!-- BREADCRUMB MINI MENU BELOW TOP NAV BAR -->
       <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
         <div class="pytorch-breadcrumbs-wrapper">
           <div role="navigation" aria-label="breadcrumbs navigation">
@@ -179,7 +144,7 @@
     
       <li>
         <a href="../../index.html">
-            Mthree 2.5.1 2.5.1 documentation
+            Mthree 2.6.3 2.6.3 documentation
         </a> &gt;
       </li>
 
@@ -191,17 +156,13 @@
   </ul>
 </div>
         </div>
-
-        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
-          Shortcuts
-        </div>
       </div>
 
+      <!-- MAIN CENTRE CONTENT -->
       <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
+        
         <div class="pytorch-content-left">
-          
           <div class="rst-content">
-          
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
               
@@ -223,15 +184,16 @@
 <span class="kn">import</span> <span class="nn">warnings</span>
 <span class="kn">import</span> <span class="nn">threading</span>
 <span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">ceil</span>
 <span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">perf_counter</span>
+<span class="kn">import</span> <span class="nn">logging</span>
 
 <span class="kn">import</span> <span class="nn">psutil</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">scipy.linalg</span> <span class="k">as</span> <span class="nn">la</span>
 <span class="kn">import</span> <span class="nn">scipy.sparse.linalg</span> <span class="k">as</span> <span class="nn">spla</span>
 <span class="kn">import</span> <span class="nn">orjson</span>
-<span class="kn">from</span> <span class="nn">qiskit</span> <span class="kn">import</span> <span class="n">execute</span>
-<span class="kn">from</span> <span class="nn">qiskit.providers</span> <span class="kn">import</span> <span class="n">Backend</span><span class="p">,</span> <span class="n">BackendV2</span><span class="p">,</span> <span class="n">BackendV1</span>
+<span class="kn">from</span> <span class="nn">qiskit.providers</span> <span class="kn">import</span> <span class="n">BackendV2</span><span class="p">,</span> <span class="n">BackendV1</span>
 
 <span class="kn">from</span> <span class="nn">mthree.circuits</span> <span class="kn">import</span> <span class="p">(</span>
     <span class="n">_tensor_meas_states</span><span class="p">,</span>
@@ -240,15 +202,19 @@
     <span class="n">balanced_cal_circuits</span><span class="p">,</span>
 <span class="p">)</span>
 <span class="kn">from</span> <span class="nn">mthree.matrix</span> <span class="kn">import</span> <span class="n">_reduced_cal_matrix</span><span class="p">,</span> <span class="n">sdd_check</span>
-<span class="kn">from</span> <span class="nn">mthree.utils</span> <span class="kn">import</span> <span class="n">counts_to_vector</span><span class="p">,</span> <span class="n">vector_to_quasiprobs</span>
+<span class="kn">from</span> <span class="nn">mthree.utils</span> <span class="kn">import</span> <span class="n">counts_to_vector</span><span class="p">,</span> <span class="n">vector_to_quasiprobs</span><span class="p">,</span> <span class="n">gmres</span>
 <span class="kn">from</span> <span class="nn">mthree.norms</span> <span class="kn">import</span> <span class="n">ainv_onenorm_est_lu</span><span class="p">,</span> <span class="n">ainv_onenorm_est_iter</span>
 <span class="kn">from</span> <span class="nn">mthree.matvec</span> <span class="kn">import</span> <span class="n">M3MatVec</span>
 <span class="kn">from</span> <span class="nn">mthree.exceptions</span> <span class="kn">import</span> <span class="n">M3Error</span>
 <span class="kn">from</span> <span class="nn">mthree.classes</span> <span class="kn">import</span> <span class="n">QuasiCollection</span>
 <span class="kn">from</span> <span class="nn">._helpers</span> <span class="kn">import</span> <span class="n">system_info</span>
 
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
-<div class="viewcode-block" id="M3Mitigation"><a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation">[docs]</a><span class="k">class</span> <span class="nc">M3Mitigation</span><span class="p">:</span>
+
+<div class="viewcode-block" id="M3Mitigation">
+<a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation">[docs]</a>
+<span class="k">class</span> <span class="nc">M3Mitigation</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Main M3 calibration class.&quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">system</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">iter_threshold</span><span class="o">=</span><span class="mi">4096</span><span class="p">):</span>
@@ -342,7 +308,9 @@
         <span class="n">cals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_form_cals</span><span class="p">(</span><span class="n">qubits</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">sdd_check</span><span class="p">(</span><span class="n">counts</span><span class="p">,</span> <span class="n">cals</span><span class="p">,</span> <span class="n">num_bits</span><span class="p">,</span> <span class="n">distance</span><span class="p">)</span>
 
-<div class="viewcode-block" id="M3Mitigation.tensored_cals_from_system"><a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.tensored_cals_from_system">[docs]</a>    <span class="k">def</span> <span class="nf">tensored_cals_from_system</span><span class="p">(</span>
+<div class="viewcode-block" id="M3Mitigation.tensored_cals_from_system">
+<a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.tensored_cals_from_system">[docs]</a>
+    <span class="k">def</span> <span class="nf">tensored_cals_from_system</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">qubits</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">shots</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;balanced&quot;</span><span class="p">,</span> <span class="n">rep_delay</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cals_file</span><span class="o">=</span><span class="kc">None</span>
     <span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Grab calibration data from system.</span>
@@ -363,7 +331,10 @@
             <span class="n">cals_file</span><span class="o">=</span><span class="n">cals_file</span><span class="p">,</span>
         <span class="p">)</span></div>
 
-<div class="viewcode-block" id="M3Mitigation.cals_from_system"><a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.cals_from_system">[docs]</a>    <span class="k">def</span> <span class="nf">cals_from_system</span><span class="p">(</span>
+
+<div class="viewcode-block" id="M3Mitigation.cals_from_system">
+<a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.cals_from_system">[docs]</a>
+    <span class="k">def</span> <span class="nf">cals_from_system</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">qubits</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">shots</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
@@ -423,7 +394,10 @@
             <span class="n">async_cal</span><span class="o">=</span><span class="n">async_cal</span><span class="p">,</span>
         <span class="p">)</span></div>
 
-<div class="viewcode-block" id="M3Mitigation.cals_from_file"><a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.cals_from_file">[docs]</a>    <span class="k">def</span> <span class="nf">cals_from_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cals_file</span><span class="p">):</span>
+
+<div class="viewcode-block" id="M3Mitigation.cals_from_file">
+<a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.cals_from_file">[docs]</a>
+    <span class="k">def</span> <span class="nf">cals_from_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cals_file</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Generated the calibration data from a previous runs output</span>
 
 <span class="sd">        Parameters:</span>
@@ -451,7 +425,10 @@
                 <span class="p">]</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">faulty_qubits</span> <span class="o">=</span> <span class="n">_faulty_qubit_checker</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">single_qubit_cals</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="M3Mitigation.cals_to_file"><a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.cals_to_file">[docs]</a>    <span class="k">def</span> <span class="nf">cals_to_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cals_file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+
+<div class="viewcode-block" id="M3Mitigation.cals_to_file">
+<a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.cals_to_file">[docs]</a>
+    <span class="k">def</span> <span class="nf">cals_to_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cals_file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Save calibration data to JSON file.</span>
 
 <span class="sd">        Parameters:</span>
@@ -474,7 +451,10 @@
         <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">cals_file</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fd</span><span class="p">:</span>
             <span class="n">fd</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">orjson</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">save_dict</span><span class="p">,</span> <span class="n">option</span><span class="o">=</span><span class="n">orjson</span><span class="o">.</span><span class="n">OPT_SERIALIZE_NUMPY</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="M3Mitigation.tensored_cals_from_file"><a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.tensored_cals_from_file">[docs]</a>    <span class="k">def</span> <span class="nf">tensored_cals_from_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cals_file</span><span class="p">):</span>
+
+<div class="viewcode-block" id="M3Mitigation.tensored_cals_from_file">
+<a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.tensored_cals_from_file">[docs]</a>
+    <span class="k">def</span> <span class="nf">tensored_cals_from_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cals_file</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Generated the tensored calibration data from a previous runs output</span>
 
 <span class="sd">        Parameters:</span>
@@ -484,7 +464,10 @@
         <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;This method is deprecated, use &#39;cals_from_file&#39; instead.&quot;</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">cals_from_file</span><span class="p">(</span><span class="n">cals_file</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="M3Mitigation.cals_from_matrices"><a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.cals_from_matrices">[docs]</a>    <span class="k">def</span> <span class="nf">cals_from_matrices</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">matrices</span><span class="p">):</span>
+
+<div class="viewcode-block" id="M3Mitigation.cals_from_matrices">
+<a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.cals_from_matrices">[docs]</a>
+    <span class="k">def</span> <span class="nf">cals_from_matrices</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">matrices</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Init calibration data from list of NumPy arrays.</span>
 
 <span class="sd">        Missing entires are set to None elements.</span>
@@ -505,13 +488,17 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">single_qubit_cals</span> <span class="o">=</span> <span class="n">matrices</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">faulty_qubits</span> <span class="o">=</span> <span class="n">_faulty_qubit_checker</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">single_qubit_cals</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="M3Mitigation.cals_to_matrices"><a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.cals_to_matrices">[docs]</a>    <span class="k">def</span> <span class="nf">cals_to_matrices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+<div class="viewcode-block" id="M3Mitigation.cals_to_matrices">
+<a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.cals_to_matrices">[docs]</a>
+    <span class="k">def</span> <span class="nf">cals_to_matrices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Return single qubit cals as list of NumPy arrays</span>
 
 <span class="sd">        Returns:</span>
 <span class="sd">            list: List of cals as NumPy arrays</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">single_qubit_cals</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span></div>
+
 
     <span class="k">def</span> <span class="nf">_grab_additional_cals</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
@@ -547,8 +534,11 @@
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">rep_delay</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">rep_delay</span> <span class="o">=</span> <span class="n">rep_delay</span>
 
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Grabbing calibration data for qubits=</span><span class="si">%s</span><span class="s2">, method=</span><span class="si">%s</span><span class="s2">, async_cal=</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
+                    <span class="n">qubits</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="n">async_cal</span><span class="p">)</span>
+
         <span class="k">if</span> <span class="n">method</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;independent&quot;</span><span class="p">,</span> <span class="s2">&quot;balanced&quot;</span><span class="p">,</span> <span class="s2">&quot;marginal&quot;</span><span class="p">]:</span>
-            <span class="k">raise</span> <span class="n">M3Error</span><span class="p">(</span><span class="s2">&quot;Invalid calibration method.&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="n">M3Error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid calibration method </span><span class="si">{</span><span class="n">method</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">qubits</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
             <span class="c1"># Assuming passed a mapping</span>
@@ -578,6 +568,7 @@
         <span class="c1"># shots is needed here because balanced cals will use a value</span>
         <span class="c1"># different from cal_shots</span>
         <span class="n">shots</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cal_shots</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Generating calibration circuits.&quot;</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s2">&quot;marginal&quot;</span><span class="p">:</span>
             <span class="n">trans_qcs</span> <span class="o">=</span> <span class="n">_marg_meas_states</span><span class="p">(</span>
                 <span class="n">qubits</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_qubits</span><span class="p">,</span> <span class="n">initial_reset</span><span class="o">=</span><span class="n">initial_reset</span>
@@ -614,32 +605,22 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">raise</span> <span class="n">M3Error</span><span class="p">(</span><span class="s2">&quot;Unknown backend type&quot;</span><span class="p">)</span>
         <span class="c1"># Determine the number of jobs required</span>
-        <span class="n">num_jobs</span> <span class="o">=</span> <span class="n">num_circs</span> <span class="o">//</span> <span class="n">max_circuits</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">num_jobs</span> <span class="o">=</span> <span class="n">ceil</span><span class="p">(</span><span class="n">num_circs</span> <span class="o">/</span> <span class="n">max_circuits</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Generated </span><span class="si">%s</span><span class="s2"> circuits, which will run in </span><span class="si">%s</span><span class="s2"> jobs using </span><span class="si">%s</span><span class="s2"> shots&quot;</span><span class="p">,</span>
+                    <span class="n">num_circs</span><span class="p">,</span> <span class="n">num_jobs</span><span class="p">,</span> <span class="n">shots</span><span class="p">)</span>
         <span class="c1"># Get the slice length</span>
-        <span class="n">circ_slice</span> <span class="o">=</span> <span class="n">num_circs</span> <span class="o">//</span> <span class="n">num_jobs</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">circ_slice</span> <span class="o">=</span> <span class="n">ceil</span><span class="p">(</span><span class="n">num_circs</span> <span class="o">/</span> <span class="n">num_jobs</span><span class="p">)</span>
         <span class="n">circs_list</span> <span class="o">=</span> <span class="p">[</span>
             <span class="n">trans_qcs</span><span class="p">[</span><span class="n">kk</span> <span class="o">*</span> <span class="n">circ_slice</span><span class="p">:</span> <span class="p">(</span><span class="n">kk</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">circ_slice</span><span class="p">]</span>
             <span class="k">for</span> <span class="n">kk</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_jobs</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
         <span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="n">trans_qcs</span><span class="p">[(</span><span class="n">num_jobs</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">circ_slice</span><span class="p">:]]</span>
         <span class="c1"># Do job submission here</span>
-        <span class="c1"># This Backend check is here for Qiskit direct access.  Should be removed later.</span>
         <span class="n">jobs</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">system</span><span class="p">,</span> <span class="n">Backend</span><span class="p">):</span>
-            <span class="k">for</span> <span class="n">circs</span> <span class="ow">in</span> <span class="n">circs_list</span><span class="p">:</span>
-                <span class="n">_job</span> <span class="o">=</span> <span class="n">execute</span><span class="p">(</span>
-                    <span class="n">circs</span><span class="p">,</span>
-                    <span class="bp">self</span><span class="o">.</span><span class="n">system</span><span class="p">,</span>
-                    <span class="n">optimization_level</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-                    <span class="n">shots</span><span class="o">=</span><span class="n">shots</span><span class="p">,</span>
-                    <span class="n">rep_delay</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">rep_delay</span><span class="p">,</span>
-                <span class="p">)</span>
-                <span class="n">jobs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_job</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">for</span> <span class="n">circs</span> <span class="ow">in</span> <span class="n">circs_list</span><span class="p">:</span>
-                <span class="n">_job</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">system</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">circs</span><span class="p">,</span> <span class="n">shots</span><span class="o">=</span><span class="n">shots</span><span class="p">,</span> <span class="n">rep_delay</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">rep_delay</span><span class="p">)</span>
-                <span class="n">jobs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_job</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">circs</span> <span class="ow">in</span> <span class="n">circs_list</span><span class="p">:</span>
+            <span class="n">_job</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">system</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">circs</span><span class="p">,</span> <span class="n">shots</span><span class="o">=</span><span class="n">shots</span><span class="p">,</span> <span class="n">rep_delay</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">rep_delay</span><span class="p">)</span>
+            <span class="n">jobs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_job</span><span class="p">)</span>
 
-        <span class="c1"># Execute job and cal building in new theread.</span>
+        <span class="c1"># Execute job and cal building in new thread.</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_job_error</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="k">if</span> <span class="n">async_cal</span><span class="p">:</span>
             <span class="n">thread</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span>
@@ -651,7 +632,9 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="n">_job_thread</span><span class="p">(</span><span class="n">jobs</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="n">qubits</span><span class="p">,</span> <span class="n">num_cal_qubits</span><span class="p">,</span> <span class="n">cal_strings</span><span class="p">)</span>
 
-<div class="viewcode-block" id="M3Mitigation.apply_correction"><a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.apply_correction">[docs]</a>    <span class="k">def</span> <span class="nf">apply_correction</span><span class="p">(</span>
+<div class="viewcode-block" id="M3Mitigation.apply_correction">
+<a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.apply_correction">[docs]</a>
+    <span class="k">def</span> <span class="nf">apply_correction</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">counts</span><span class="p">,</span>
         <span class="n">qubits</span><span class="p">,</span>
@@ -682,6 +665,7 @@
 <span class="sd">        Raises:</span>
 <span class="sd">            M3Error: Bitstring length does not match number of qubits given.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Apply correction to </span><span class="si">%s</span><span class="s2"> bitstrings&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">counts</span><span class="p">))</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">counts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="k">raise</span> <span class="n">M3Error</span><span class="p">(</span><span class="s2">&quot;Input counts is any empty dict.&quot;</span><span class="p">)</span>
         <span class="n">given_list</span> <span class="o">=</span> <span class="kc">False</span>
@@ -714,7 +698,13 @@
 
         <span class="n">quasi_out</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="n">details_out</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">log_iter</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">counts</span><span class="p">)</span> <span class="o">//</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Start applying correction using method </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">method</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">cnts</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">counts</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">logger</span><span class="o">.</span><span class="n">isEnabledFor</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">idx</span> <span class="o">%</span> <span class="n">log_iter</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Applying correction </span><span class="si">%s</span><span class="s2">/</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">counts</span><span class="p">))</span>
+                <span class="n">st</span> <span class="o">=</span> <span class="n">perf_counter</span><span class="p">()</span>
             <span class="n">corrected</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_apply_correction</span><span class="p">(</span>
                     <span class="n">cnts</span><span class="p">,</span>
                     <span class="n">qubits</span><span class="o">=</span><span class="n">qubits</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span>
@@ -725,11 +715,18 @@
                     <span class="n">return_mitigation_overhead</span><span class="o">=</span><span class="n">return_mitigation_overhead</span><span class="p">,</span>
                     <span class="n">details</span><span class="o">=</span><span class="n">details</span><span class="p">,</span>
             <span class="p">)</span>
+            <span class="k">if</span> <span class="n">logger</span><span class="o">.</span><span class="n">isEnabledFor</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">):</span>
+                <span class="n">dur</span> <span class="o">=</span> <span class="n">perf_counter</span><span class="p">()</span> <span class="o">-</span> <span class="n">st</span>
+                <span class="k">if</span> <span class="n">dur</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;It look </span><span class="si">%s</span><span class="s2"> seconds to process </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">dur</span><span class="p">,</span> <span class="n">cnts</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">details</span><span class="p">:</span>
+                        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Correction details: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">corrected</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
             <span class="k">if</span> <span class="n">details</span><span class="p">:</span>
                 <span class="n">quasi_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">corrected</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
                 <span class="n">details_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">corrected</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">quasi_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">corrected</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;All done applying correction&quot;</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="ow">not</span> <span class="n">given_list</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">details</span><span class="p">:</span>
@@ -741,6 +738,7 @@
             <span class="k">return</span> <span class="n">quasi_out</span><span class="p">,</span> <span class="n">details_out</span>
 
         <span class="k">return</span> <span class="n">quasi_out</span></div>
+
 
     <span class="k">def</span> <span class="nf">_apply_correction</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
@@ -872,7 +870,9 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">raise</span> <span class="n">M3Error</span><span class="p">(</span><span class="s2">&quot;Invalid method: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">method</span><span class="p">))</span>
 
-<div class="viewcode-block" id="M3Mitigation.reduced_cal_matrix"><a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.reduced_cal_matrix">[docs]</a>    <span class="k">def</span> <span class="nf">reduced_cal_matrix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">counts</span><span class="p">,</span> <span class="n">qubits</span><span class="p">,</span> <span class="n">distance</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="M3Mitigation.reduced_cal_matrix">
+<a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.reduced_cal_matrix">[docs]</a>
+    <span class="k">def</span> <span class="nf">reduced_cal_matrix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">counts</span><span class="p">,</span> <span class="n">qubits</span><span class="p">,</span> <span class="n">distance</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Return the reduced calibration matrix used in the solution.</span>
 
 <span class="sd">        Parameters:</span>
@@ -905,6 +905,7 @@
         <span class="n">cals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_form_cals</span><span class="p">(</span><span class="n">qubits</span><span class="p">)</span>
         <span class="n">A</span><span class="p">,</span> <span class="n">counts</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">_reduced_cal_matrix</span><span class="p">(</span><span class="n">counts</span><span class="p">,</span> <span class="n">cals</span><span class="p">,</span> <span class="n">num_bits</span><span class="p">,</span> <span class="n">distance</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">A</span><span class="p">,</span> <span class="n">counts</span></div>
+
 
     <span class="k">def</span> <span class="nf">_direct_solver</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">counts</span><span class="p">,</span> <span class="n">qubits</span><span class="p">,</span> <span class="n">distance</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">return_mitigation_overhead</span><span class="o">=</span><span class="kc">False</span>
@@ -976,10 +977,10 @@
 
         <span class="n">P</span> <span class="o">=</span> <span class="n">spla</span><span class="o">.</span><span class="n">LinearOperator</span><span class="p">((</span><span class="n">M</span><span class="o">.</span><span class="n">num_elems</span><span class="p">,</span> <span class="n">M</span><span class="o">.</span><span class="n">num_elems</span><span class="p">),</span> <span class="n">precond_matvec</span><span class="p">)</span>
         <span class="n">vec</span> <span class="o">=</span> <span class="n">counts_to_vector</span><span class="p">(</span><span class="n">M</span><span class="o">.</span><span class="n">sorted_counts</span><span class="p">)</span>
-        <span class="n">out</span><span class="p">,</span> <span class="n">error</span> <span class="o">=</span> <span class="n">spla</span><span class="o">.</span><span class="n">gmres</span><span class="p">(</span>
+        <span class="n">out</span><span class="p">,</span> <span class="n">error</span> <span class="o">=</span> <span class="n">gmres</span><span class="p">(</span>
             <span class="n">L</span><span class="p">,</span>
             <span class="n">vec</span><span class="p">,</span>
-            <span class="n">tol</span><span class="o">=</span><span class="n">tol</span><span class="p">,</span>
+            <span class="n">rtol</span><span class="o">=</span><span class="n">tol</span><span class="p">,</span>
             <span class="n">atol</span><span class="o">=</span><span class="n">tol</span><span class="p">,</span>
             <span class="n">maxiter</span><span class="o">=</span><span class="n">max_iter</span><span class="p">,</span>
             <span class="n">M</span><span class="o">=</span><span class="n">P</span><span class="p">,</span>
@@ -998,7 +999,9 @@
             <span class="k">return</span> <span class="n">quasi</span><span class="p">,</span> <span class="n">M</span><span class="o">.</span><span class="n">get_col_norms</span><span class="p">(),</span> <span class="n">gamma</span>
         <span class="k">return</span> <span class="n">quasi</span><span class="p">,</span> <span class="n">gamma</span>
 
-<div class="viewcode-block" id="M3Mitigation.readout_fidelity"><a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.readout_fidelity">[docs]</a>    <span class="k">def</span> <span class="nf">readout_fidelity</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">qubits</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="M3Mitigation.readout_fidelity">
+<a class="viewcode-back" href="../../stubs/mthree.M3Mitigation.html#mthree.M3Mitigation.readout_fidelity">[docs]</a>
+    <span class="k">def</span> <span class="nf">readout_fidelity</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">qubits</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Compute readout fidelity for calibrated qubits.</span>
 
 <span class="sd">        Parameters:</span>
@@ -1031,6 +1034,7 @@
                 <span class="n">fids</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">fids</span></div>
 
+
     <span class="k">def</span> <span class="nf">_thread_check</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Check if a thread is running and join it.</span>
 
@@ -1041,6 +1045,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">_thread</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_job_error</span><span class="p">:</span>
             <span class="k">raise</span> <span class="bp">self</span><span class="o">.</span><span class="n">_job_error</span>  <span class="c1"># pylint: disable=raising-bad-type</span></div>
+
 
 
 <span class="k">def</span> <span class="nf">_job_thread</span><span class="p">(</span><span class="n">jobs</span><span class="p">,</span> <span class="n">mit</span><span class="p">,</span> <span class="n">qubits</span><span class="p">,</span> <span class="n">num_cal_qubits</span><span class="p">,</span> <span class="n">cal_strings</span><span class="p">):</span>
@@ -1063,9 +1068,17 @@
             <span class="k">return</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">_counts</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">get_counts</span><span class="p">()</span>
-            <span class="n">counts</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">_counts</span><span class="p">)</span>
+            <span class="c1"># _counts can be a list or a dict (if only one circuit was executed within the job)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">_counts</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">counts</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">_counts</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">counts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_counts</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;All jobs are done.&quot;</span><span class="p">)</span>
     <span class="c1"># attach timestamp</span>
     <span class="n">timestamp</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">date</span>
+    <span class="c1"># Timestamp can be None</span>
+    <span class="k">if</span> <span class="n">timestamp</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">timestamp</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
     <span class="c1"># Needed since Aer result date is str but IBMQ job is datetime</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">timestamp</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">):</span>
         <span class="n">timestamp</span> <span class="o">=</span> <span class="n">timestamp</span><span class="o">.</span><span class="n">isoformat</span><span class="p">()</span>
@@ -1167,7 +1180,6 @@
 </pre></div>
 
              </article>
-             
             </div>
             <footer>
 <!-- USER FEEDBACK -->
@@ -1185,7 +1197,7 @@
         &copy; Copyright 2021, Mthree Team.
 
     <!-- SHOW DATE PAGE LAST UPDATED -->
-      Last updated on 2023/12/26.
+      Last updated on 2024/04/04.
 
     </p>
   </div>
@@ -1209,6 +1221,7 @@
           </div>
         </div>
 
+        <!-- RIGHT SIDE AUTOSUMMARY MENU -->
         <div class="pytorch-content-right" id="pytorch-content-right">
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
@@ -1217,79 +1230,34 @@
           </div>
         </div>
       </section>
-    </div>
+    </div> 
 
-  
+  <!-- MOBILE MENU FOR SIDEBAR -->
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=99c1414e"></script>
+      <script src="../../_static/doctools.js?v=888ff710"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/thebelab-helper.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
 
-     
-       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-         <script src="../../_static/jquery.js"></script>
-         <script src="../../_static/underscore.js"></script>
-         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-         <script src="../../_static/doctools.js"></script>
-         <script src="../../_static/sphinx_highlight.js"></script>
-         <script src="../../_static/thebelab-helper.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-         <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
-         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-
-  <script type="text/javascript" src="../../_static/js/vendor/popper.min.js"></script>
-  <script type="text/javascript" src="../../_static/js/vendor/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
+  <!-- enable language dropdown menu expand -->
   <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
-
-  <div>
-    <br>
-  </div>
-
-  <!-- Begin Mobile Menu -->
-
-  <div class="mobile-main-menu">
-    <div class="container-fluid">
-      <div class="container">
-        <div class="mobile-main-menu-header-container">
-          <a class="header-logo" href="https://qiskit.org/" aria-label="PyTorch"></a>
-          <a class="main-menu-close-button" href="#" data-behavior="close-mobile-menu"></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mobile-main-menu-links-container">
-      <div class="main-menu">
-        <ul>
-          <li>
-            <a href="https://qiskit.org/documentation/">Qiskit documentation</a>
-          </li>
-          <li>
-            <a href="https://qiskit.org/documentation/partners/">Partners documentation</a>
-          </li>
-          <li>
-            <a href="https://github.com/Qiskit-Partners/mthree">Github</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- End Mobile Menu -->
-
-  <script type="text/javascript" src="../../_static/js/vendor/anchor.min.js"></script>
+    jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function() {
       mobileMenu.bind();
       mobileTOC.bind();
-      pytorchAnchors.bind();
       sideMenus.bind();
       scrollToAnchor.bind();
       highlightNavigation.bind();
@@ -1302,5 +1270,6 @@
       });
     })
   </script>
+
 </body>
 </html>

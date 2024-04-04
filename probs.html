@@ -1,137 +1,53 @@
-
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+  <html class="no-js" lang="en" >
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Converting to probabilites &mdash; Mthree 2.5.1 2.5.1 documentation</title>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  
-  
-  
-  
-
-  
-
-  
-  
-    
-
-  
-
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
+  <title>Converting to probabilites &mdash; Mthree 2.6.3 2.6.3 documentation</title>
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/jupyter-sphinx.css" type="text/css" />
-  <link rel="stylesheet" href="_static/thebelab.css" type="text/css" />
-  <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Saving and loading calibration data" href="cal_io.html" />
-    <link rel="prev" title="Low-weight observables (Marginals)" href="marginals.html" /> 
+  <link rel="stylesheet" href="_static/thebelab.css" type="text/css" /><script src="_static/js/web-components/top-nav-bar.js"></script>
 
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
-</head>
-
-<div class="container-fluid header-holder tutorials-header" id="header-holder">
-  <div class="container">
-    <div class="header-container">
-      <a class="header-logo" href="https://qiskit.org/" aria-label="PyTorch"></a>
-
-      <div class="main-menu">
-        <ul>
-          <li>
-            <a href="https://qiskit.org/documentation/" target="_blank">Qiskit documentation</a>
-          </li>
-          <li>
-            <a href="https://qiskit.org/documentation/partners/">Partners documentation</a>
-          </li>
-          <li>
-            <a href="https://github.com/Qiskit-Partners/mthree" target="_blank">Github</a>
-          </li>
-        </ul>
-      </div>
-
-      <a class="main-menu-open-button" href="#" data-behavior="open-mobile-menu"></a>
-    </div>
-
-  </div>
-</div>
-
-
+  <!-- SEGMENT ANALYTICS --></head>
 <body class="pytorch-body">
+  <!-- UNIFIED TOP MENU -->
+  <qiskit-ui-shell variant="hide-account"></qiskit-ui-shell>
 
    
 
+    <!-- LEFT SIDE BAR -->
+
+    <!-- if translations available, display language dropdown menu -->
     
 
-    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    <span class="rst-current-version-label"></span>
-    <span class="rst-versions-dropdown-icon"></span>
-  </span>
-  <div class="rst-other-versions">
-    
-  </div>
-  <script>
-    jQuery('.version').click((evt) => {
-      const hash = window.location.hash
-      const complete_url = evt.target.href + hash
-      window.location = complete_url
-      evt.preventDefault()
-    })
-  </script>
-</div>
-
+    <!-- Menu becomes dropdown in mobile view -->
     <div class="table-of-contents-link-wrapper">
       <span>Table of Contents</span>
       <a href="#" class="toggle-table-of-contents" data-behavior="toggle-table-of-contents"></a>
     </div>
 
+    <!-- left side bar main content -->
     <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
-      <div class="pytorch-side-scroll">
-        <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          <div class="pytorch-left-menu-search">
-            
-
-            
-              
-              
-                <div class="version">
-                  2.5.1
-                </div>
-              
-            
-
-            <div role="search">
+    <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <div class="sidebar">
+    <div class="pytorch-left-menu-search">
+        <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search Mthree 2.5.1 Docs" />
+    <input type="text" name="q" placeholder="Search Mthree 2.6.3 Docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
+    </div>
 
-            
-          </div>
-
-          
-            
-            
-              
-            
-            
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">mthree (2.5.1)</a></li>
+    <!-- render sidebar from the toctree -->
+    
+    
+        <ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">mthree (2.6.3)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="citing.html">Citing</a></li>
 </ul>
@@ -167,13 +83,60 @@
 <li class="toctree-l1"><a class="reference internal" href="apidocs/utils.html">Utility functions</a></li>
 </ul>
 
-            
-          
-        </div>
-      </div>
-    </nav>
+    
+
+    <!-- PREVIOUS RELEASES -->
+        
+
+    </div>
+  </div>
+</nav>
+
+<!-- OPTIONAL EXPANDABLE FUNCTIONALITY -->
+
+
+<!-- STYLING -->
+<script>
+    // indent subheadings under captions
+    expandable_rows = document.getElementsByClassName("caption");
+    var i;
+    for (i = 0; i < expandable_rows.length; i++) {
+        expandable_rows[i].nextElementSibling.style.marginLeft = "1rem"
+
+        // un-bold subheadings in dropdown
+        var subheadings = expandable_rows[i].nextElementSibling
+        for (j = 0; j < subheadings.children.length; j++) {
+            subheadings.children[j].style.fontWeight = "unset"
+        }
+    }
+
+    // adjust toctree class name to style external links
+    var toc_rows = document.getElementsByClassName("toctree-l1");
+    var i;
+    for (i = 0; i < toc_rows.length; i++) {
+        if (toc_rows[i].children[0].className === "reference external") {
+            toc_rows[i].className = "toctree-l1-external"
+            }
+    }
+
+    // expand and unexpand previous releases dropdown when clicked
+    var release_rows = document.getElementsByClassName("sidebar-l1-expandable");
+    for (i = 0; i < release_rows.length; i++) {
+        release_rows[i].addEventListener("click", function() {
+            this.classList.toggle("open");
+            var clicked_subheadings = this.nextElementSibling;
+            if (clicked_subheadings.style.display === "block") {
+            clicked_subheadings.style.display = "none";
+            } else {
+            clicked_subheadings.style.display = "block";
+            }
+        });
+    }
+</script>
 
     <div class="pytorch-container">
+
+      <!-- BREADCRUMB MINI MENU BELOW TOP NAV BAR -->
       <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
         <div class="pytorch-breadcrumbs-wrapper">
           <div role="navigation" aria-label="breadcrumbs navigation">
@@ -182,7 +145,7 @@
     
       <li>
         <a href="index.html">
-            Mthree 2.5.1 2.5.1 documentation
+            Mthree 2.6.3 2.6.3 documentation
         </a> &gt;
       </li>
 
@@ -192,22 +155,18 @@
   </ul>
 </div>
         </div>
-
-        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
-          Shortcuts
-        </div>
       </div>
 
+      <!-- MAIN CENTRE CONTENT -->
       <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
+        
         <div class="pytorch-content-left">
-          
           <div class="rst-content">
-          
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
               
   <section id="converting-to-probabilites">
-<span id="probs"></span><h1>Converting to probabilites<a class="headerlink" href="#converting-to-probabilites" title="Permalink to this heading">¶</a></h1>
+<span id="probs"></span><h1>Converting to probabilites<a class="headerlink" href="#converting-to-probabilites" title="Link to this heading">¶</a></h1>
 <p>M3 natively works with quasi-probability distributions; distributions that contain negative values
 but nonetheless sum to one.  This is useful for mitigating expectation values, but there could
 be situations where a true probability distribution is useful / needed.  To this end, it is
@@ -218,7 +177,7 @@ done in linear time.</p>
 <div class="jupyter_cell jupyter_container docutils container">
 <div class="cell_input code_cell docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">qiskit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">qiskit.providers.fake_provider</span> <span class="kn">import</span> <span class="n">FakeCasablanca</span>
+<span class="kn">from</span> <span class="nn">qiskit_ibm_runtime.fake_provider</span> <span class="kn">import</span> <span class="n">FakeCasablanca</span>
 <span class="kn">import</span> <span class="nn">mthree</span>
 
 <span class="n">qc</span> <span class="o">=</span> <span class="n">QuantumCircuit</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
@@ -246,47 +205,45 @@ done in linear time.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;001001&#39;: 5.529659060137611e-06,
- &#39;001011&#39;: 7.246949278586552e-06,
- &#39;101101&#39;: 1.9984774455292848e-05,
- &#39;000011&#39;: 4.7870322668490574e-05,
- &#39;100010&#39;: 5.5868144477729484e-05,
- &#39;100001&#39;: 6.552035464988832e-05,
- &#39;010110&#39;: 7.050460630916112e-05,
- &#39;110100&#39;: 7.540347034865082e-05,
- &#39;011010&#39;: 8.230360959257053e-05,
- &#39;111100&#39;: 8.745919295680116e-05,
- &#39;011110&#39;: 9.331702056904759e-05,
- &#39;100111&#39;: 0.00011398742036037923,
- &#39;001101&#39;: 0.00011652367460147738,
- &#39;011000&#39;: 0.0001573082130555662,
- &#39;101000&#39;: 0.00016455537874629302,
- &#39;010111&#39;: 0.000177594098084009,
- &#39;110010&#39;: 0.00022069827773365464,
- &#39;110101&#39;: 0.0002564135431898845,
- &#39;001110&#39;: 0.00028091717879536257,
- &#39;110111&#39;: 0.0004614098261050834,
- &#39;101111&#39;: 0.0005232445501074394,
- &#39;111010&#39;: 0.0006326202694814277,
- &#39;000101&#39;: 0.0006453070600172512,
- &#39;001000&#39;: 0.0009058971661930509,
- &#39;010000&#39;: 0.0009304098437061164,
- &#39;100000&#39;: 0.0012693465384015826,
- &#39;110000&#39;: 0.0015710865574182042,
- &#39;111110&#39;: 0.0019149614223813681,
- &#39;000100&#39;: 0.002321086771342411,
- &#39;111101&#39;: 0.0028731719080059346,
- &#39;000010&#39;: 0.0031560435963338975,
- &#39;000001&#39;: 0.0031912011901203833,
- &#39;000110&#39;: 0.0036025478754180516,
- &#39;011111&#39;: 0.004242071085508364,
- &#39;001111&#39;: 0.0049048300290004355,
- &#39;111000&#39;: 0.005386993805315548,
- &#39;111011&#39;: 0.005488462274319417,
- &#39;111001&#39;: 0.0060577618730198925,
- &#39;000111&#39;: 0.006221811513508239,
- &#39;111111&#39;: 0.46063151066859376,
- &#39;000000&#39;: 0.48096921828676903}
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;011011&#39;: 7.050960797001281e-06,
+ &#39;010010&#39;: 1.4418237092352624e-05,
+ &#39;010001&#39;: 1.9340394737033812e-05,
+ &#39;100100&#39;: 2.3507217327188957e-05,
+ &#39;110100&#39;: 2.5169920261257723e-05,
+ &#39;010110&#39;: 3.162337004968272e-05,
+ &#39;101011&#39;: 4.404076539359129e-05,
+ &#39;100110&#39;: 4.70727152294756e-05,
+ &#39;110110&#39;: 4.749752265669859e-05,
+ &#39;100011&#39;: 5.967372964698498e-05,
+ &#39;101100&#39;: 6.790724540332787e-05,
+ &#39;011100&#39;: 7.147565277589531e-05,
+ &#39;101001&#39;: 7.9164365066579e-05,
+ &#39;111100&#39;: 0.00012736706232426264,
+ &#39;110101&#39;: 0.00014019663888594356,
+ &#39;110010&#39;: 0.000168346673305732,
+ &#39;110001&#39;: 0.00023469960261633056,
+ &#39;001001&#39;: 0.0002539914296898285,
+ &#39;000011&#39;: 0.00030270545930044957,
+ &#39;100000&#39;: 0.0003443555642813829,
+ &#39;110011&#39;: 0.0005704129720488945,
+ &#39;000100&#39;: 0.0007506600085210843,
+ &#39;010000&#39;: 0.0013660347689732418,
+ &#39;111110&#39;: 0.001871231007236491,
+ &#39;000010&#39;: 0.002271202879055719,
+ &#39;000001&#39;: 0.002273615611419853,
+ &#39;101111&#39;: 0.0023327591431014233,
+ &#39;110000&#39;: 0.0024899846677532214,
+ &#39;111101&#39;: 0.003492957514214469,
+ &#39;110111&#39;: 0.004115163470999615,
+ &#39;111001&#39;: 0.004475688595640388,
+ &#39;001111&#39;: 0.004778424172050958,
+ &#39;011111&#39;: 0.004878635374524322,
+ &#39;111000&#39;: 0.0051220270443856864,
+ &#39;000110&#39;: 0.005504507227896967,
+ &#39;000111&#39;: 0.006363288111857886,
+ &#39;111011&#39;: 0.006422094438648559,
+ &#39;111111&#39;: 0.4552686664284077,
+ &#39;000000&#39;: 0.4835430420364224}
 </pre></div>
 </div>
 </div>
@@ -295,7 +252,6 @@ done in linear time.</p>
 
 
              </article>
-             
             </div>
             <footer>
 <!-- USER FEEDBACK -->
@@ -317,7 +273,7 @@ done in linear time.</p>
         &copy; Copyright 2021, Mthree Team.
 
     <!-- SHOW DATE PAGE LAST UPDATED -->
-      Last updated on 2023/12/26.
+      Last updated on 2024/04/04.
 
     </p>
   </div>
@@ -341,6 +297,7 @@ done in linear time.</p>
           </div>
         </div>
 
+        <!-- RIGHT SIDE AUTOSUMMARY MENU -->
         <div class="pytorch-content-right" id="pytorch-content-right">
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
@@ -352,81 +309,36 @@ done in linear time.</p>
           </div>
         </div>
       </section>
-    </div>
+    </div> 
 
-  
+  <!-- MOBILE MENU FOR SIDEBAR -->
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=99c1414e"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/thebelab-helper.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-     
-       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-         <script src="_static/jquery.js"></script>
-         <script src="_static/underscore.js"></script>
-         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-         <script src="_static/doctools.js"></script>
-         <script src="_static/sphinx_highlight.js"></script>
-         <script src="_static/thebelab-helper.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-         <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
-         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-         <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-
-  <script type="text/javascript" src="_static/js/vendor/popper.min.js"></script>
-  <script type="text/javascript" src="_static/js/vendor/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-  <script type="text/javascript" src="_static/js/theme.js"></script>
-
+  <!-- enable language dropdown menu expand -->
   <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
-
-  <div>
-    <br>
-  </div>
-
-  <!-- Begin Mobile Menu -->
-
-  <div class="mobile-main-menu">
-    <div class="container-fluid">
-      <div class="container">
-        <div class="mobile-main-menu-header-container">
-          <a class="header-logo" href="https://qiskit.org/" aria-label="PyTorch"></a>
-          <a class="main-menu-close-button" href="#" data-behavior="close-mobile-menu"></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mobile-main-menu-links-container">
-      <div class="main-menu">
-        <ul>
-          <li>
-            <a href="https://qiskit.org/documentation/">Qiskit documentation</a>
-          </li>
-          <li>
-            <a href="https://qiskit.org/documentation/partners/">Partners documentation</a>
-          </li>
-          <li>
-            <a href="https://github.com/Qiskit-Partners/mthree">Github</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- End Mobile Menu -->
-
-  <script type="text/javascript" src="_static/js/vendor/anchor.min.js"></script>
+    jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function() {
       mobileMenu.bind();
       mobileTOC.bind();
-      pytorchAnchors.bind();
       sideMenus.bind();
       scrollToAnchor.bind();
       highlightNavigation.bind();
@@ -439,5 +351,6 @@ done in linear time.</p>
       });
     })
   </script>
+
 </body>
 </html>
